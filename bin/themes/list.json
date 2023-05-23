@@ -1,0 +1,17 @@
+[
+    {
+        "file": "basik.th",
+        "varfile": "basik_nightblue.thvar",
+        "name": "Basik - Night Blue"
+    },
+    {
+        "file": "basik.th",
+        "varfile": "basik_nightgreen.thvar",
+        "name": "Basik - Night Green"
+    },
+    {
+        "file": "basik.th",
+        "varfile": "basik_nightred.thvar",
+        "name": "Basik - Night Red"
+    }
+]
