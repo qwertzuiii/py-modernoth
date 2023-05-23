@@ -1,1 +1,1 @@
-sass
+PyQt5
