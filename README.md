@@ -4,6 +4,8 @@
 
 An easy theming method for **PyQt5**
 
+<img src="https://i.imgur.com/mAItuxX.png" width=600>
+
 ---
 
 ## TODOs
