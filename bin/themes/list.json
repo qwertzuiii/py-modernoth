@@ -1,17 +1,38 @@
 [
     {
         "file": "basik.th",
+        "opt": "",
         "varfile": "basik_nightblue.thvar",
         "name": "Basik - Night Blue"
     },
     {
         "file": "basik.th",
+        "opt": "",
         "varfile": "basik_nightgreen.thvar",
         "name": "Basik - Night Green"
     },
     {
         "file": "basik.th",
+        "opt": "",
         "varfile": "basik_nightred.thvar",
         "name": "Basik - Night Red"
+    },
+    {
+        "file": "basik.th",
+        "opt": "basik-round.th",
+        "varfile": "basik_nightblue.thvar",
+        "name": "Basik Round - Night Blue"
+    },
+    {
+        "file": "basik.th",
+        "opt": "basik-round.th",
+        "varfile": "basik_nightgreen.thvar",
+        "name": "Basik Round - Night Green"
+    },
+    {
+        "file": "basik.th",
+        "opt": "basik-round.th",
+        "varfile": "basik_nightred.thvar",
+        "name": "Basik Round - Night Red"
     }
 ]

@@ -8,5 +8,6 @@
     "$secondary_t_lighter": "rgba(217, 0, 0, 100)",
     "$secondary_t": "rgba(217, 0, 0, 70)",
     "$secondary": "rgb(217, 0, 0)",
-    "$text_color": "rgb(255, 255, 255)"
+    "$text_color": "rgb(255, 255, 255)",
+    "$roundval": "5px"
 }

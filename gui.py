@@ -51,22 +51,45 @@ class MainApp(QMainWindow, QWidget):
 
     def __theme_change(self):
         # Loading theme stylesheet
-        f  = theme_list[self.theme_index]['file']
-        vf = theme_list[self.theme_index]['varfile']
-        n  = theme_list[self.theme_index]['name']
+        f   = theme_list[self.theme_index]['file']
+        vf  = theme_list[self.theme_index]['varfile']
+        n   = theme_list[self.theme_index]['name']
+        opt = theme_list[self.theme_index]['opt']
+
+        if opt == "":
+            o = False
+        else:
+            o = True
+        
         print('Loading Theme: ' + n + " [{}]".format(f))
+        if o:
+            print('OPT: {}'.format(opt))
 
         varsf = open(theme_folder + vf, 'r').read()
         varsf = jsn(varsf)
 
         style = open(theme_folder + f, 'r').read()
+
+        if o:
+            style_opt = open(theme_folder + opt, 'r').read()
         
-        for var in varsf:
+        for var in varsf: # Replacing vars in variable file
             style = style.replace(var, varsf[var])
 
-        if is_Debug: open('STYLE.RESULT.--debug.css', 'w').write(style)
+            if o:
+                style_opt = style_opt.replace(var, varsf[var])
 
-        self.setStyleSheet(style)
+        if is_Debug:
+            if o:
+                open('STYLE.RESULT.--debug.css', 'w').write(style + "\n" + style_opt)
+            else:
+                open('STYLE.RESULT.--debug.css', 'w').write(style)
+
+        if o:
+            self.setStyleSheet(style + "\n" + style_opt)
+        else:
+            self.setStyleSheet(style)
+        
         pass
 
 

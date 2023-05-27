@@ -1,0 +1,61 @@
+QWidget {
+    border-radius: $roundval;
+}
+
+QPushButton {
+    border-radius: $roundval;
+}
+QPushButton::hover {
+    border-radius: $roundval;
+}
+QPushButton::hover:pressed {
+    border-radius: $roundval;
+}
+
+QLineEdit {
+    border-radius: $roundval;
+}
+
+QComboBox {
+    border-radius: $roundval;
+}
+QComboBox::hover {
+    border-radius: $roundval;
+}
+
+QGroupBox {
+    border-radius: $roundval;
+}
+
+QRadioButton::indicator {
+    border-radius: $roundval;
+}
+QRadioButton::indicator:checked {
+    border-radius: $roundval;
+}
+
+QCheckBox::indicator {
+	border-radius: $roundval;
+}
+QCheckBox::indicator:checked {
+	border-radius: $roundval;
+}
+
+QSlider::groove:horizontal {
+    border-radius: $roundval;
+}
+QSlider::groove:horizontal::hover {
+    border-radius: $roundval;
+}
+QSlider::handle:horizontal {
+    border-radius: $roundval;
+}
+QSlider::groove:vertical {
+    border-radius: $roundval;
+}
+QSlider::groove:vertical::hover {
+    border-radius: $roundval;
+}
+QSlider::handle:vertical {
+    border-radius: $roundval;
+}
